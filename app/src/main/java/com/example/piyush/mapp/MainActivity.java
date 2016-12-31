@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.RelativeLayout;
 import android.widget.Button;
 
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;// important
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,18 +15,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //LAYOOUT
         RelativeLayout ml = new RelativeLayout(this);
         ml.setBackground(Color.BLACK);
-        Re
 
-
-
-
+        //BUTTON
         Button rb = new Button(this);
         rb.setBackground(Color.DKGRAY);
 
-        ml.addView(rb);
-        setContentView(ml);
+        //BUTTON DETAILS
+        RelativeLayout.LayoutParams b_details = new RelativeLayout.LayoutParams(
+                WRAP_CONTENT,WRAP_CONTENT);
+
+        b_details.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        b_details.addRule(RelativeLayout.CENTER_VERTICAL);
+
+        ml.addView(rb);//ADD LAYOUT
+        setContentView(ml);//SET CONTENT TO THIS VIEW
 
 
 
