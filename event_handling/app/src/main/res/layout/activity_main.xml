@@ -39,17 +39,15 @@
             android:layout_column="0" />
 
         <Button
-            android:text="Button"
+            android:text="@string/b_s"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button5"
+            android:id="@+id/big_button"
             android:layout_row="0"
             android:layout_column="2"
             android:layout_rowSpan="2"
             android:layout_gravity="fill_vertical"
-            android:layout_columnSpan="2"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/gridLayout" />
+            android:layout_columnSpan="2" />
 
         <Button
             android:text="Button"
@@ -64,11 +62,11 @@
     </GridLayout>
 
     <TextView
-        android:text="TextView"
+        android:text="@string/my_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="91dp"
-        android:id="@+id/textView"
+        android:id="@+id/my_text"
         android:layout_below="@+id/gridLayout"
         android:layout_centerHorizontal="true" />
 
