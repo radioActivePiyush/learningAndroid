@@ -25,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
 
         );
 
+        button.setOnLongClickListener(
+                new Button.OnLongClickListener(){
+                    public boolean onLongClick(View v){
+                        TextView changetext = (TextView)findViewById(R.id.my_text);
+                        changetext.setText("Text View");
+                        return true;
+
+
+                    }
+                }
+
+        );
 
 
 
