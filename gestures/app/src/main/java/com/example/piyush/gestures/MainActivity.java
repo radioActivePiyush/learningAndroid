@@ -84,4 +84,17 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         message.setText("onFling");
         return true;
     }
+    /////////////////end guestures //////////////
+    @Override
+    public boolean onTouchEvent(MotionEvent e){
+        this.detector.onTouchEvent(e);
+
+        return super.onTouchEvent(e);
+
+    }
+
+
+
+
+
 }
